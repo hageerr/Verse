@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- LOGIN FORM -->
+
+        <form class="form form-hidden" id="login-form">
+        <h1 class="headline">Login</h1>
+        <div class="incorrect-mess form_message_error"></div>
+
+        <div class="email-input">
+            <input type="email" class="form-input" autofocus placeholder="Enter Email">
+            <div class="incorrect-email-mess">
+                The email entered is incorrect
+            </div>
+            <input type="password" class="form-input" autofocus placeholder="Enter Password">
+            <div class="incorrect-password-mess"></div>
+        </div>
+
+        <button class="form-btn" type="submit" >Continue</button>
+
+        <div class="links">
+           <p> <a class="forgot-pass" href="#">Forgot Password?</a> </p>
+            <p> <a class="creat-account" href="#">Don't have an account? Create an account</a></p>
+        </div>
+
+        </form>
+
+        <!-- SIGNUP FORM -->
+
+        <form class="form" id="signup-form">
+            <h1 class="headline">Create Account</h1>
+            <div class="incorrect-mess form_message_error">Incorrect email/password combination</div>
+        
+            <div class="email-input">
+                <input type="email" class="form-input" autofocus placeholder="Enter Email">
+                <div class="incorrect-email-mess">
+                    The email entered is incorrect
+                </div>
+                <input type="password" class="form-input" autofocus placeholder="Enter Password">
+                <div class="incorrect-password-mess"></div> <br>
+                <input type="password" class="form-input" autofocus placeholder="Confirm Password">
+                <div class="unidentical-password-mess"></div>
+            </div>
+        
+            <button class="form-btn" type="submit">Continue</button>
+        
+            <div class="links">
+                <p> <a class="sign-up" href="#">Already have an account? Sign-up</a> </p>
+            </div>
+        
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
